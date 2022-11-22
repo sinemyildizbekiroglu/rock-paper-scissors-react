@@ -1,4 +1,12 @@
+import { useState } from "react"
+
 const App = () => {
+  const [userchoice, setUserChoice] = useState(null)
+
+  const handleClick = (value) => {
+    setUserChoice(value)
+  }
+
   return (
     <div>
       <h1>user choice is: </h1>
